@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinéScope</title>
+<link rel="stylesheet" href="mainstyle.css">
+<style>.bak {
+    background-image: url('OIP.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.5em;
+}</style>
+</head>
+<body>
+    <header>
+        <div class="logo">CinéScope</div>
+        <div class="login-buttons">
+            <a href="login.html" target="_self">Connexion</a>
+            <a href="register.html" target="_self">Inscription</a>
+        </div>
+    </header>    
+    <section class="bak">
+        <div id="message"></div>
+        <script src="scrit.js"></script>
+    </section>
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher un film...">
+        <button>Rechercher</button>
+    </div>
+<nav>
+    <ul>
+        <li>
+            <a href="projet.html">Accueil</a>
+        </li>
+        <li>
+            <a href="#">Genres</a>
+            <ul>
+                <li><a href="#" >Comédie</a></li>
+                <li><a href="#" >Drame</a></li>
+                <li><a href="#" >Romance</a></li>
+                <li><a href="#" >Thriller</a></li>
+                <li><a href="#" >Science-fiction</a></li>
+                <li><a href="#" >Musicale</a></li>
+                <li><a href="#" >Psychologique</a></li>
+                <li><a href="#" >Crime</a></li>
+            </ul>
+        </li>
+        <li><a href="movies.html" target="_self">critiques</a></li>
+        <li><a href="explorer.html" target="_self">Explorer</a></li>
+        <li><a href="apropos.html" target="_self">À propos</a></li>
+    </ul>
+</nav>
+    <div class="section">
+        <div class="movie-card" id="th">
+            <!-- Poster -->
+            <img src="th.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>INCEPTION</h3>
+                <p class="movie-description">Inception (Science-fiction, Thriller)</br>Inception est un voyage dans l'esprit, littéralement. Christopher Nolan nous plonge dans une intrigue complexe et fascinante où réalité et rêves s'entrelacent. Ce film est une énigme qui exige notre attention à chaque instant. La performance de Leonardo DiCaprio est exceptionnelle, mais ce sont les concepts novateurs de "rêve dans un rêve" qui m'ont captivé.
+                    Et toi, as-tu tout compris du premier coup ou as-tu eu besoin d'un deuxième visionnage ? Parlons-en !</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+                        
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <!-- Poster -->
+            <img src="gf1.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Le Parrain (1972)</h3>
+                <p class="movie-description">The Godfather (Drame, Crime)<br>Le Parrain, c'est bien plus qu'un film, c'est une œuvre d'art. Francis Ford Coppola nous immerge dans la famille Corleone avec une élégance rare. Marlon Brando incarne Vito Corleone d’une manière si iconique que sa voix et ses gestes restent gravés dans l’histoire du cinéma. L’histoire parle de pouvoir, de loyauté et des dilemmes moraux qui déchirent cette dynastie.
+                    Selon toi, quel est le moment le plus marquant ? Je penche pour le baptême... tout un symbole.</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <!-- Poster -->
+            <img src="gf2.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Le Parrain II (1974)</h3>
+                <p class="movie-description">The Godfather Part II (Drame, Crime)<br>
+                    La suite est un chef-d'œuvre à part entière. Al Pacino brille en Michael Corleone, un homme tiraillé entre ses responsabilités familiales et ses ambitions. Les flashbacks avec Robert De Niro en jeune Vito ajoutent une profondeur incroyable.
+                    Penses-tu que ce deuxième opus surpasse le premier ? Je ne suis toujours pas sûr, et j’aimerais entendre ton avis.</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card" id="gf3">
+            <!-- Poster -->
+            <img src="gf3.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Le Parrain III(1990)</h3>
+                <p class="movie-description">The Godfather Part III (Drame, Crime)<br>
+                    Bien qu’il soit souvent critiqué, Le Parrain III mérite d’être vu. C’est une conclusion mélancolique, avec Michael cherchant la rédemption. Certaines scènes sont puissantes, comme l’opéra et ce dernier cri déchirant. Certes, ce n’est pas parfait, mais c’est une fin digne pour cette saga.
+                    Toi aussi, as-tu ressenti ce mélange d’espoir et de tristesse à la fin ? Parlons-en.</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+  
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <!-- Poster -->
+            <img src="wt.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Wild Tales (Drame, Comédie noire)</h3>
+                <p class="movie-description">Ce film argentin est une bombe ! Wild Tales explore les limites de la patience humaine à travers des histoires folles mais étrangement réalistes. L'humour noir est savamment dosé, et chaque segment a son propre charme.
+                    Si tu devais vivre l’une de ces histoires, laquelle choisirais-tu ? Moi, probablement celle de l'avion…</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <!-- Poster -->
+            <img src="fg.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Forrest Gump (Drame, Romance)</h3>
+                <p class="movie-description">Tom Hanks incarne Forrest avec une sincérité désarmante. Ce film m’a rappelé l’importance de voir la vie avec un regard simple mais profond. Entre ses rencontres historiques et ses aventures, chaque scène est émouvante.
+                    Quelle leçon as-tu retenue de ce voyage à travers l’Histoire ? Moi, c'est "la vie, c'est comme une boîte de chocolats".</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+  
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <!-- Poster -->
+            <img src="ll.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>La La Land (Comédie musicale, Romance)</h3>
+                <p class="movie-description">Une déclaration d’amour au cinéma et à la musique. La La Land est visuellement époustouflant, et l’alchimie entre Emma Stone et Ryan Gosling est magique. La fin douce-amère m’a bouleversé, mais c’est aussi ce qui rend le film si spécial.
+                    Es-tu du genre à vouloir une fin heureuse ou réaliste ? Moi, j’hésite encore pour celui-ci.</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+              
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <!-- Poster -->
+            <img src="pf.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Pulp Fiction (Crime, Comédie noire)</h3>
+                <p class="movie-description">Ce film de Tarantino est un patchwork brillant de dialogues percutants, de violence stylisée et d’humour décalé. Les performances de Samuel L. Jackson et John Travolta sont tout simplement inoubliables.
+                    Quelle est ta scène préférée ? Personnellement, j’adore le discours de Jules sur "Ezekiel 25:17".</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+              
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <!-- Poster -->
+            <img src="rfd.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Requiem for a Dream (Drame, Psychologique)</h3>
+                <p class="movie-description">Ce film n’est pas pour les âmes sensibles. Darren Aronofsky explore la descente aux enfers de personnages pris au piège de leurs rêves et de leurs dépendances. L’intensité émotionnelle et la musique hypnotique de Clint Mansell m’ont hanté pendant des jours.
+                    As-tu ressenti la même douleur à la fin ? C’est un film qu’il faut digérer, mais qui vaut chaque minute.</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+    
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="movie-card" id="td">
+            <!-- Poster -->
+            <img src="td.jpeg" alt="Poster du film" class="movie-poster">
+
+            <!-- Informations sur le film -->
+            <div class="movie-details">
+                <h3>Taxi Driver (Drame, Psychologique)</h3>
+                <p class="movie-description">Scorsese et De Niro signent ici une œuvre monumentale. Taxi Driver est une plongée dans la solitude urbaine et la psyché d’un homme brisé. La transformation de Travis Bickle est aussi fascinante que terrifiante.
+                    Qu’as-tu pensé de son fameux "You talkin' to me ?" Une réplique légendaire, n’est-ce pas ?</p>
+
+                <!-- Section J'aime / Je n'aime pas -->
+                <div class="like-dislike">
+                    <button class="like-button">👍 J'aime</button>
+                    <button class="dislike-button">👎 Je n'aime pas</button>
+                </div>
+
+                <!-- Barre de commentaire -->
+                <div class="comments-section">
+                    <h4>Commentaires :</h4>
+                    <div class="comments-list">
+
+                    </div>
+
+                    <!-- Formulaire pour ajouter un commentaire -->
+                    <form class="comment-form" action="add_comment.php" method="POST">
+                        <textarea name="comment" placeholder="Ajoutez votre commentaire ici..." required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 CinéScope - Tous droits réservés
+    </footer>
+</body>
+</html>

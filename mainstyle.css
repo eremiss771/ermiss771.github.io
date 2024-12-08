@@ -1,0 +1,277 @@
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0e68c;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #800000; 
+            padding: 10px 20px;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar {
+            display: flex;
+            margin: 20px;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #f0e68c;
+            border: none;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+        }
+        .section {
+            margin: 20px;
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .login-buttons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        
+        section {
+            font-size: 24px;
+            color: gold;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }    
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #800000;
+            color: white;
+            width: 100%;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            color: #f0e68c;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: #f0e68c;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Sous-menu déroulant */
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            padding: 10px;
+            display: none;
+            z-index: 1000;
+        }
+        nav ul li ul li {
+            margin: 5px 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .movie h3, .movie p {
+            text-align: center;
+            color: #f0e68c;
+        }
+        .movie button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 15px;
+            background-color: #f0e68c;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .banner {
+            background-image: url('R.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 1.5em;
+        }
+        #message {color: rgb(240, 180, 30);}   
+        .fun-facts {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            color: #f0e68c;
+        }
+        .fun-facts h2 {
+            color: gold;
+        }
+        .fun-facts ul {
+            list-style: none;
+            padding: 0;
+        }
+        .fun-facts ul li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        .fun-facts ul li:before {
+            content: '🎥';
+            position: absolute;
+            left: 0;
+        }
+        /* Carte d'un film */
+.movie-card {
+    display: flex;
+    background-color: #2a2a2a; /* Fond gris foncé */
+    border: 1px solid #444; /* Bordure discrète */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ombre douce */
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Poster du film */
+.movie-poster {
+    width: 200px; /* Taille plus grande pour les affiches */
+    height: 300px;
+    object-fit: cover;
+    border-right: 2px solid #444;
+}
+
+/* Détails du film */
+.movie-details {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Titre et description du film */
+.movie-details h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #e50914; /* Rouge Netflix */
+}
+
+.movie-description {
+    font-size: 1em;
+    color: #aaa; /* Gris clair pour le texte */
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+/* Boutons J'aime et Je n'aime pas */
+.like-dislike {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.like-button, .dislike-button {
+    background-color: transparent;
+    color: #f4f4f4; /* Texte clair */
+    border: 2px solid #e50914; /* Rouge Netflix */
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+.like-button:hover {
+    background-color: #e50914; /* Remplissage rouge au survol */
+    color: #fff; /* Texte blanc */
+}
+
+.dislike-button:hover {
+    background-color: #444; /* Gris foncé au survol */
+    color: #fff;
+}
+
+/* Section des commentaires */
+.comments-section {
+    margin-top: 20px;
+    border-top: 1px solid #444; /* Ligne de séparation discrète */
+    padding-top: 15px;
+}
+
+.comments-section h4 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #e50914;
+}
+
+.comments-list {
+    margin-bottom: 15px;
+}
+
+.comments-list p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Formulaire de commentaire */
+.comment-form textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 0.9em;
+    background-color: #333;
+    color: #f4f4f4;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.comment-form button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #b00710; /* Rouge plus foncé */
+}
+html {scroll-behavior: smooth;}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinéScope</title>
+<link rel="stylesheet" href="mainstyle.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">CinéScope</div>
+        <div class="login-buttons">
+            <a href="login.html" target="_self">Connexion</a>
+            <a href="register.html" target="_self">Inscription</a>
+        </div>
+    </header>    
+    <section><div class="banner">
+        <div id="message"></div>
+        <script src="scrit.js"></script></div></section>
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher un film...">
+        <button>Rechercher</button>
+    </div>
+<nav>
+    <ul>
+        <li>
+            <a href="projet.html">Accueil</a>
+        </li>
+        <li>
+            <a href="#">Genres</a>
+            <ul>
+                <li><a href="#" >Comédie</a></li>
+                <li><a href="#" >Drame</a></li>
+                <li><a href="#" >Romance</a></li>
+                <li><a href="#" >Thriller</a></li>
+                <li><a href="#" >Science-fiction</a></li>
+                <li><a href="#" >Musicale</a></li>
+                <li><a href="#" >Psychologique</a></li>
+                <li><a href="#" >Crime</a></li>
+            </ul>
+        </li>
+        <li><a href="movies.html" target="_self">critiques</a></li>
+        <li><a href="explorer.html" target="_self">Explorer</a></li>
+        <li><a href="apropos.html" target="_self">À propos</a></li>
+    </ul>
+</nav>
+    <div class="section">
+        <section><h2>Tendances</h2></section>
+        <section><p>Découvrez les critiques les plus revisés en ce moment !</p></section>
+        <div class="movies-grid">
+            <div class="movie">
+                <img src="gf3.jpeg" alt="Affiche Film 1">
+                <h3>the godfather III</h3>
+                <button onclick="location.href='movies.html#gf3'">Voir la critique</button>
+            </div>
+            <div class="movie">
+                <img src="td.jpeg" alt="Affiche Film 1">
+                <h3>taxi driver</h3>
+                <button onclick="location.href='movies.html#td'">Voir la critique</button>
+            </div>
+            <div class="movie">
+                <img src="th.jpeg" alt="Affiche Film 1">
+                <h3>Inception</h3>
+                <button onclick="location.href='movies.html#th'">Voir la critique</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 CinéScope - Tous droits réservés
+    </footer>
+</body>
+</html>
